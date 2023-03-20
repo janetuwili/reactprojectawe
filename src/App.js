@@ -16,6 +16,7 @@ import Contact from './components/Contact';
      <Nav/>
      
      <Routes>
+     <Route path='' element={<Home/>}/>
      <Route path='/home' element={<Home/>}/>
      <Route path='/nav' element={<Nav/>}/>
      <Route path='/about' element={<About/>}/>

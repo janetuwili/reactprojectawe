@@ -32,3 +32,42 @@
  justify-content: center;
  word-spacing: normal;
 }
+.text {
+  animation-name: moveUp;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px); /* move text up by 50px */
+  }
+}
+.video-content {
+  animation: moveVideo 3s linear;
+}
+
+@keyframes moveVideo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.left-content {
+  animation: moveText 3s linear;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
