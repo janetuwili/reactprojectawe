@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {
     Card,
     CardHeader,
@@ -7,6 +7,19 @@ import {
     Typography,
   } from "@material-tailwind/react";
   import { Button } from "@material-tailwind/react";
+  import React, { useRef, useState } from "react";
+  // Import Swiper React components
+  import { Swiper, SwiperSlide } from "swiper/react";
+  
+  // Import Swiper styles
+  import "swiper/css";
+  import "swiper/css/navigation";
+  
+  
+  
+  // import required modules
+  import { Navigation } from "swiper";
+  
 
  function Program() {
   return (
@@ -62,6 +75,25 @@ import {
     </Card>
         </div>
 
+    </div>
+    <div className='slideshows'>
+    <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <SwiperSlide>
+          <div>
+            <img src="https://plus.unsplash.com/premium_photo-1661777740346-9659fcdfe834?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHN0dWRlbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
+          </div>
+
+        </SwiperSlide>
+        <SwiperSlide>
+          <div>
+            <img src="https://images.unsplash.com/photo-1517842536804-bf6629e2c291?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHN0dWRlbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHN0dWRlbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
+        </SwiperSlide>
+        
+      </Swiper>
     </div>
     </>
   )
